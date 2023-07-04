@@ -166,10 +166,9 @@ figcaption {
     margin-right: auto;
     margin-top: 40px;
     width: 90%;
-    text-align: center;
+    text-align: left;
     background-color: #222930;
     padding: 10px;
-    text-align: justify;
     margin-top: 40px;
     border-radius: 10px;
     display: flex;
@@ -181,7 +180,7 @@ figcaption {
         margin-right: auto;
         margin-top: 40px;
         width: 60%;
-        text-align: center;
+        text-align: left;
     }
 }
 .entry:hover {
@@ -209,7 +208,6 @@ figcaption {
 
 /* stylizacja opisu wpisu */
 .entrytxt {
-    text-align: left;
     display: inline-block;
     width: 90%;
     font-size: 15px;
