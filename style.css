@@ -209,6 +209,7 @@ figcaption {
 
 /* stylizacja opisu wpisu */
 .entrytxt {
+    text-align: left;
     display: inline-block;
     width: 90%;
     font-size: 15px;
