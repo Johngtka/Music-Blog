@@ -1,0 +1,546 @@
+body {
+    background-color: #2f3336;
+    margin: 0;
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+}
+
+/* stylizacja przyklejania się menu do góry strony */
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+body img {
+    border-radius: 10px;
+}
+
+/* stylizacja wszystkich h1 */
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+/* stylizacja wszystkich h2 */
+h2 {
+    font-size: 44px;
+    font-weight: 400;
+    color: #39a5f1;
+    margin-bottom: 20px;
+}
+
+/* stylizacja wszystkich h3 */
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #39a5f1;
+}
+
+/* stylizacja paska menu */
+nav {
+    background-color: #1c74b3;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    margin-left: 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* stylizacja listy opcji paska menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    max-height: 40px;
+    line-height: 200%;
+}
+
+/* stylizacja opcji w menu */
+nav ul > li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed #0a2b42;
+}
+
+/* stylizacja pierwszej opcji w menu */
+nav ul > li:first-child {
+    border-left: 1px dashed #0a2b42;
+}
+
+/* stylizacja linków w liście */
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    max-height: 40px;
+    line-height: 200%;
+}
+
+/* zdarzenie hover w liście opcji */
+nav ul a:hover {
+    background-color: #115b91;
+    color: #fff;
+}
+
+.mainContent {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* stylizacja pojemnika z artykułami w index */
+.categories {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.categories h2 {
+    font-family: "Tilt Prism", cursive;
+}
+
+/* stylizacja zdjęć div artykułów*/
+.author img {
+    width: 250px;
+    height: 200px;
+}
+
+/* stylizacja div w index*/
+.author {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* stylizacja linków w div index */
+.author a {
+    opacity: 0.8;
+}
+
+.author a:hover {
+    opacity: 9;
+}
+
+/* stylizacja kafelków w index */
+figure {
+    margin: 8px;
+    padding: 0;
+}
+
+/* stylizacja podpisów pod kafelkami w index */
+figcaption {
+    margin-top: 8px;
+    padding: 0;
+}
+
+/* stylizacja div z najnowszymi wpisami */
+#newest {
+    background-color: #191d21;
+}
+
+.entries {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.entries h2 {
+    font-family: "Tilt Prism", cursive;
+}
+
+/* stylizacja div z wpisami */
+.entry {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 90%;
+    text-align: center;
+    background-color: #222930;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    .entry {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        width: 60%;
+        text-align: center;
+    }
+}
+.entry:hover {
+    background-color: #4b5c6d;
+}
+
+.entries a {
+    text-decoration: none;
+}
+
+/* stylizacja div zdjęcia wpisu */
+.entryimg {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}
+
+/* stylizacja zdjęcia wpisu */
+.entryimg img {
+    height: 100px;
+    width: 100px;
+}
+
+/* stylizacja opisu wpisu */
+.entrytxt {
+    display: inline-block;
+    width: 90%;
+    font-size: 15px;
+}
+
+.entrytxt p {
+    color: #fff;
+}
+
+/* stylizacja div kontaktowego */
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.contact h2 {
+    font-family: "Tilt Prism", cursive;
+}
+
+/* stylizacja paragrafu div kontaktowego */
+.contact p {
+    margin-bottom: 40px;
+}
+
+/* stylizacja przycisku do kontaktu */
+.bluebutton {
+    background-color: #1c74b2;
+    width: 100px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bluebutton:hover {
+    background-color: #196499;
+}
+
+/* stylizacja div z socialmedia */
+.socials {
+    width: 100%;
+    text-align: center;
+    background-color: #191d21;
+}
+
+.socialdivs {
+    width: 100%;
+    text-align: center;
+}
+
+.socialdivs a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* stylizacja socialmedia wraz ze zdarzeniami hover */
+.ig {
+    width: 250px;
+    height: 155px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ig:hover {
+    background-color: #ff8075;
+}
+
+.yt {
+    width: 250px;
+    height: 155px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yt:hover {
+    background-color: #d94348;
+}
+
+/* stylizacja div artykułu */
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* stylizacja artykułu */
+.content {
+    float: left;
+    /* display: inline-block; */
+    width: 100%;
+    /* padding: 20px; */
+    text-align: justyfy;
+}
+
+.zdj {
+    text-align: center;
+}
+
+.zdj a {
+    opacity: 0.9;
+}
+
+.zdj a:hover {
+    opacity: 5;
+}
+
+/* stylizacja h2 artykułu */
+.content h2 {
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Tilt Prism", cursive;
+    color: #39a5f1;
+    margin-bottom: 20px;
+}
+
+/* stylizacja listy ul artykułu */
+.content ul {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* stylizacja paragrafu artykułu */
+.content p {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* stylizacja pochylonego tekstu artykułu*/
+.content i {
+    color: #ddd;
+}
+
+/* stylizacja div z prawą stroną formulaża */
+.rightSideBar {
+    float: left;
+    /* display: inline-block; */
+    width: 300px;
+    /* padding: 20px; */
+}
+
+.rightSideBar h2 {
+    font-size: 40px;
+}
+
+.rightSideBar ul {
+    padding-left: 20px;
+}
+
+/* stylizacja zdjęcia(reklamy) */
+.rightSideBar img {
+    margin-top: 15px;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #39a5f1;
+}
+
+.zdj1 a {
+    opacity: 0.9;
+}
+
+.zdj1 a:hover {
+    opacity: 5;
+}
+
+/* stylizacja artykułu w kontakcie */
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* stylizacja h2 w kontakcie */
+.about h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #39a5f1;
+}
+
+/* stylizacja pochylonego txt */
+.about i {
+    color: #53adfe;
+}
+
+/* stylizacja zdjęc w artykułach inne numery klasy foto to są wyjątki*/
+.foto {
+    width: 500px;
+    height: 450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.foto1 {
+    width: 150px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto2 {
+    width: 650px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.foto3 {
+    width: 220px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* stylizacja pojemnika main w zakładze pierwszy raz tutaj i aktualizacjach */
+.aboutContent {
+    text-align: center;
+}
+
+.aboutContent ul > li:hover {
+    cursor: default;
+}
+
+.aboutContent h2 {
+    font-family: "Tilt Prism", cursive;
+}
+
+.aboutContent p {
+    color: white;
+    font-size: large;
+}
+
+/* stylizacja pojemnika main w artykułach */
+.articleContent p {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-size: 16px;
+    word-spacing: 10px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.articleContent b {
+    color: #53a8fe;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.articleContent ul {
+    width: 90%;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.articleContent ul > li:hover {
+    cursor: default;
+}
+
+/* stylizacja pojemnika aktualizacji */
+.updatesList {
+    background-color: #191d21;
+    width: 100%;
+    /* height: auto; */
+    /* overflow-y: scroll; */
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.updatesList h2 {
+    font-size: 30px;
+    font-family: "Tilt Prism", cursive;
+}
+
+.updatesList p {
+    font-size: medium;
+    margin: 0;
+}
+.updateHead {
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    font-style: oblique;
+}
+
+/* stylizacja div z informacją o autorach */
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info a {
+    color: #fff;
+}
+
+#Ver {
+    margin-top: 15px;
+}
+
+.contactCon h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.contactCon p {
+    font-size: 25px;
+}
+.contactCon a {
+    font-style: italic;
+}
+
