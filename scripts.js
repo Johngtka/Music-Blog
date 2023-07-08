@@ -1,17 +1,19 @@
 jQuery(function () {
 
     const updateCounter = () => {
-        let log = 16
-        document.querySelector('#updateNum').innerHTML = log
+        $.getJSON('./projectConf.json', (count) => {
+            document.querySelector('#updateNum').innerHTML = count.updateNum
+        })
     }
-    updateCounter()
 
     const appVersion = () => {
-        let majorNum = 1
-        let minorNum = 1
-        let pathNum = 0
-        const finalVersion = majorNum + '.' + minorNum + '.' + pathNum
-        document.querySelector('#V').innerHTML = finalVersion
+        $.getJSON('./projectConf.json', (ver) => {
+            let Major = ver.majorNum;
+            let Minor = ver.minorNum;
+            let Path = ver.pathNum;
+            document.querySelector('#V').innerHTML = Major + '.' + Minor + '.' + Path
+        })
+        updateCounter()
     }
     appVersion()
 
@@ -22,6 +24,22 @@ jQuery(function () {
     }
 
     copyright()
+
+    const warningShow = () => {
+        let elements = document.querySelectorAll('.warning')
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = '&#9888; ' + 'Uwaga głośne !!!'
+        }
+    }
+
+    warningShow()
+
+    const topImg = function ($) {
+        $.scrollTo(0);
+        $('.link').click(() => $.scrollTo($('#gora'), 1000))
+    }
+
+    topImg($)
 
     const NavY = $('nav').offset().top
 
@@ -39,40 +57,58 @@ jQuery(function () {
         stickyNav()
     })
 
-    const topImg = function ($) {
-        $.scrollTo(0);
-        $('.link').click(() => $.scrollTo($('#gora'), 1000))
-    }
+    // const stickyMenu = function () {
+    //     let ScrollY = $(window).scrollTop();
 
-    topImg($)
+    //     if (ScrollY >= NavY) {
+    //         $('aside').addClass('sticky2');
+    //     } else {
+    //         $('aside').removeClass('sticky2');
+    //     }
 
-    const contentsMap = function ($) {
-        $.scrollTo(0)
+    //     let devWidth = screen.width
+    //     if (devWidth >= 800) {
+    //         let menuPos = $('aside').offset().top
+    //         console.log(menuPos)
+    //         if (menuPos > 4020) {
+    //             $('aside').removeClass('sticky2');
 
-        $('#1').click(() => {
-            $.scrollTo($('#art1'), 500)
-        })
+    //         }
+    //     }
 
-        $('#2').click(() => {
-            $.scrollTo($('#art2'), 500)
-        })
+    // }
 
-        $('#3').click(() => {
-            $.scrollTo($('#art3'), 500)
-        })
+    // $(window).on("scroll", function () {
+    //     stickyMenu()
+    // })
 
-        $('#4').click(() => {
-            $.scrollTo($('#art4'), 500)
-        })
+    // const contentsMap = function ($) {
+    //     $.scrollTo(0)
 
-        $('#5').click(() => {
-            $.scrollTo($('#art5'), 500)
-        })
+    //     $('#1').click(() => {
+    //         $.scrollTo($('#art1'), 500)
+    //     })
 
-        $('#6').click(() => {
-            $.scrollTo($('#art6'), 500)
-        })
-    }
+    //     $('#2').click(() => {
+    //         $.scrollTo($('#art2'), 500)
+    //     })
 
-    contentsMap($)
+    //     $('#3').click(() => {
+    //         $.scrollTo($('#art3'), 500)
+    //     })
+
+    //     $('#4').click(() => {
+    //         $.scrollTo($('#art4'), 500)
+    //     })
+
+    //     $('#5').click(() => {
+    //         $.scrollTo($('#art5'), 500)
+    //     })
+
+    //     $('#6').click(() => {
+    //         $.scrollTo($('#art6'), 500)
+    //     })
+    // }
+
+    // contentsMap($)
 })

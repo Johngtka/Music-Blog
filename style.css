@@ -14,6 +14,15 @@ body {
     top: 0;
     z-index: 100;
 }
+@media screen and (min-width: 800px) {
+    .sticky2 {
+        position: fixed;
+        left: auto;
+        padding-top: 60px;
+        top: 0;
+        z-index: 100;
+    }
+}
 
 body img {
     border-radius: 10px;
@@ -304,22 +313,8 @@ figcaption {
 /* stylizacja artykułu */
 .content {
     float: left;
-    /* display: inline-block; */
     width: 100%;
-    /* padding: 20px; */
-    text-align: justyfy;
-}
-
-.zdj {
-    text-align: center;
-}
-
-.zdj a {
-    opacity: 0.9;
-}
-
-.zdj a:hover {
-    opacity: 5;
+    /* text-align: justify; */
 }
 
 /* stylizacja h2 artykułu */
@@ -355,11 +350,12 @@ figcaption {
 }
 
 /* stylizacja div z prawą stroną formulaża */
-.rightSideBar {
+/* .rightSideBar {
+    display: flex;
     float: left;
-    /* display: inline-block; */
-    width: 300px;
-    /* padding: 20px; */
+    width: 400px;
+    height: auto;
+    padding-left: 20px;
 }
 
 .rightSideBar h2 {
@@ -370,7 +366,6 @@ figcaption {
     padding-left: 20px;
 }
 
-/* stylizacja zdjęcia(reklamy) */
 .rightSideBar img {
     margin-top: 15px;
 }
@@ -382,15 +377,7 @@ aside a {
 
 aside a:hover {
     color: #39a5f1;
-}
-
-.zdj1 a {
-    opacity: 0.9;
-}
-
-.zdj1 a:hover {
-    opacity: 5;
-}
+} */
 
 /* stylizacja artykułu w kontakcie */
 .about {
@@ -411,33 +398,55 @@ aside a:hover {
     color: #53adfe;
 }
 
+.foto:hover,
+.foto1:hover,
+.foto2:hover,
+.foto3:hover {
+    opacity: 5;
+}
 /* stylizacja zdjęc w artykułach inne numery klasy foto to są wyjątki*/
 .foto {
-    width: 500px;
-    height: 450px;
+    display: block;
     margin-right: auto;
     margin-left: auto;
+    opacity: 0.9;
+    width: 500px;
+    height: 450px;
 }
 
 .foto1 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
     width: 150px;
     height: 450px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .foto2 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
     width: 650px;
     height: 400px;
-    margin-left: 50px;
-    margin-right: auto;
 }
 
 .foto3 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
     width: 220px;
     height: 350px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.zdj1 a {
+    opacity: 0.9;
+}
+
+.zdj1 a:hover {
+    opacity: 5;
 }
 /* stylizacja pojemnika main w zakładze pierwszy raz tutaj i aktualizacjach */
 .aboutContent {
@@ -541,5 +550,42 @@ aside a:hover {
 }
 .contactCon a {
     font-style: italic;
+    color: #ff6400;
+    opacity: 5;
+}
+.contactCon a:hover {
+    opacity: 0.9;
+    background-color: #e67b34;
+    text-decoration: none;
+    color: #fff;
+}
+
+.exWidget {
+    display: block;
+    border-radius: 12px;
+    width: 60%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .exWidget {
+        display: block;
+        border-radius: 12px;
+        width: 40%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.warning {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f00;
 }
 

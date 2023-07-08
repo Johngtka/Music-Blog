@@ -1,11 +1,11 @@
 jQuery(function () {
-
     const appVersion = () => {
-        let majorNum = 1
-        let minorNum = 1
-        let pathNum = 0
-        const finalVersion = majorNum + '.' + minorNum + '.' + pathNum
-        document.querySelector('#V').innerHTML = finalVersion
+        $.getJSON('./projectConf.json', (ver) => {
+            let Major = ver.majorNum;
+            let Minor = ver.minorNum;
+            let Path = ver.pathNum;
+            document.getElementById('V').innerHTML = Major + '.' + Minor + '.' + Path
+        })
     }
     appVersion()
 
